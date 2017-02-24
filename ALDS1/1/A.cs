@@ -1,5 +1,5 @@
 // Getting Started - Insertion Sort
-// http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_1_A&lang=jp
+// http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_1_A
 using System;
 using System.Linq;
 
