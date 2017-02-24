@@ -18,8 +18,17 @@ namespace ALDS1_1_A {
 					.Select(i => int.Parse(i))
 					.ToArray();
 			
-			Output(A.Select(i => i.ToString())
-					.Aggregate((i, j) => i + " " + j));
+			for(int i = 1; i < N; i++) {
+				int target = A[i];
+				int j = i;
+				
+				for(; j > 0 && target <= A[j-1]; j--)
+					A[j] = A[j-1];
+				A[j] = target;
+				
+				Output(A.Select(s => s.ToString())
+						.Aggregate((s, t) => s + " " + t));
+			}
 		}
 		
 		String Input {
