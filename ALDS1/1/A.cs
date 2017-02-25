@@ -18,7 +18,7 @@ namespace ALDS1_1_A {
 					.Select(i => int.Parse(i))
 					.ToArray();
 			
-			for(int i = 1; i < N; i++) {
+			for(int i = 0; i < N; i++) {
 				int target = A[i];
 				int j = i;
 				
